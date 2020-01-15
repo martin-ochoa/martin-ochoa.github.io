@@ -191,8 +191,8 @@ ul#nav li.current a { color: #F06000; }
    padding-top: 100px;
    overflow: hidden;
    position: relative;
-   height: 600px;
-   min-height: 400px;
+   height: 440px;
+   min-height: 440px;
       overflow: hidden;
 }
 
@@ -364,7 +364,7 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 1px;
 }
 #events h1 span {
-   border-bottom: 3px solid #11ABB0;
+  
    padding-bottom: 6px;
 }
 #events h3 {
@@ -579,7 +579,7 @@ ul#nav li.current a { color: #F06000; }
    background: #ebeeee;
    padding-top: 90px;
    padding-bottom: 90px;
-   min-height: 400px;
+   min-height: 200px;
 }
 #publications h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
