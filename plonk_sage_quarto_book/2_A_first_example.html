@@ -78,9 +78,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4908c0a427760731c848ee836885f712.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c1f1f89f24f4b159a9bec410f2b3ec6b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4908c0a427760731c848ee836885f712.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-80ce11bc7229172623d51c946298bcdd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-5823873a306986a4b58c4826f9bea5e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-80ce11bc7229172623d51c946298bcdd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -145,7 +145,7 @@ window.Quarto = {
 <link rel="stylesheet" href="custom.css">
 </head>
 
-<body class="nav-sidebar floating fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -326,7 +326,7 @@ window.Quarto = {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
@@ -396,7 +396,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -406,7 +406,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-right">
 
     
   
@@ -647,13 +647,13 @@ Q(x) =\;&amp; 304003373219989933642311190906351042896505061116889365884697280369
 <section id="prover-computation" class="level5">
 <h5 class="anchored" data-anchor-id="prover-computation">2. Prover Computation</h5>
 <ol type="1">
-<li><p><em>(Prover <span class="math inline">\(P\)</span>)</em> Computes the 4th Fibonacci number squared <span class="math inline">\(F_4^2\)</span> by forming a table of intermediate values, then interpolates them as <strong>3th-degree polynomials</strong>: <span class="math display">\[
+<li><p><em>(Prover <span class="math inline">\(P\)</span>)</em> Computes the 4th Fibonacci number squared <span class="math inline">\(F_4^2\)</span> by forming a table of intermediate values, then interpolates them as 3rd-degree polynomials: <span class="math display">\[
 a(x), \quad b(x), \quad c(x).
 \]</span></p>
 <p>as well as selectors <span class="math inline">\(qL(x), \quad qR(x), \quad qM(x)\)</span>.</p></li>
 <li><p><em>(Prover <span class="math inline">\(P\)</span>)</em> Computes <span class="math display">\[
 t(x)= qL(x) \cdot a(x) + qR(x) \cdot b(x) + qM(x) \cdot (a(x) \cdot b(x)) - c(x)
-\]</span> as well as the <strong>quotient polynomial</strong> <span class="math inline">\(Q(x)\)</span> satisfying <span class="math display">\[
+\]</span> as well as the quotient polynomial <span class="math inline">\(Q(x)\)</span> satisfying <span class="math display">\[
 t(x) \;=\; Q(x)\,\cdot Z(x).
 \]</span></p></li>
 <li><p><em>(Prover <span class="math inline">\(P\)</span>)</em> Similarly constructs <span class="math display">\[
@@ -1121,7 +1121,7 @@ c(4) \; \text{is the correct value of } F_4^2.
     }
   });
   </script>
-<nav class="page-navigation">
+<nav class="page-navigation column-page-right">
   <div class="nav-page nav-page-previous">
       <a href="./index.html" class="pagination-link" aria-label="1.Introduction">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">1.Introduction</span></span>
